@@ -330,22 +330,52 @@ main {
   align-items: center;
   gap: 15px;
 }
-.cv-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 6px;
-  text-decoration: none;
+
+/*-----------------------------------*\
+  #SHOW CV BUTTON
+\*-----------------------------------*/
+
+.show-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 10px 22px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  color: var(--white-2);
+  background: linear-gradient(135deg, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px hsla(45, 100%, 72%, 0.3);
+  text-transform: uppercase;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.cv-btn:hover {
-  background: linear-gradient(135deg, #0056b3, #0099cc);
-  transform: scale(1.05);
+.show-cv-btn:hover {
+  background: linear-gradient(135deg, hsl(35, 100%, 70%), hsl(45, 100%, 75%));
+  box-shadow: 0 12px 24px hsla(45, 100%, 75%, 0.4);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.show-cv-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px hsla(45, 100%, 60%, 0.2);
+}
+
+.show-cv-btn ion-icon {
+  font-size: 18px;
+  color: var(--smoky-black);
+  background: var(--white-2);
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px hsla(0, 0%, 0%, 0.25);
+  transition: all 0.3s ease;
+}
+
+.show-cv-btn:hover ion-icon {
+  transform: rotate(10deg);
 }
 
 .avatar-box {
